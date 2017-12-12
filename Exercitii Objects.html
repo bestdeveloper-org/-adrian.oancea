@@ -1,0 +1,121 @@
+var masina = {
+  roti : 4,
+  scaune : 2,
+  bancheta : 1,
+  seConduce : false,
+  Conduce : function ()
+  {
+  if (this.seConduce === true)
+  {
+  console.log("vruuuum");
+}else{
+  console.log("service");}
+}
+}
+console.log(masina.Conduce()); 
+console.log(JSON.stringify(masina))
+
+
+var masina = {
+  roti : 4,
+  scaune : 2,
+  bancheta : 1,
+  Conduce : function ()
+  {return this.roti;
+  }
+}
+  console.log(masina.Conduce());
+
+
+
+var pisica = {
+  cap: 1,
+  picioare: 4,
+  coada: 1,
+  ochi: 2,
+  accident: true,
+  masina: function ()
+  {
+    if (this.accident === true)
+      {console.log("miauuuuu");
+      return this.picioare -1;
+      }
+    else {
+      console.log("that was close");
+      return this.cap + " intreg";
+    }
+  }
+}
+console.log(pisica.masina()); 
+
+
+
+
+
+var casa = {
+  camere: 2,
+  bucatarie: 1,
+  bai: 2,
+  balcon: 1,
+  cutremur: false,
+  opa: function()
+  {
+  if (this.cutremur === true)
+  {
+    console.log ("nasol");
+  return this.bai;
+  }
+    else
+    {console.log("mai ai o sansa");
+    return this.bucatarie;
+    }
+}
+}
+console.log(casa.opa()); 
+
+var drum = {
+  asfalt : "alb",
+  bariera : "verde",
+  autocar : true,
+  excursie : function()
+  {
+  if(this.autocar === true) 
+   {
+     console.log("a"); 
+     return this.bariera;}else{
+       console.log("nimic");}
+}
+}
+var autostrada = {
+  asfalt : "albastru",
+  bariera : "nu",
+  viteza : true,
+  voiaj : function ()
+  {if(this.viteza === true)
+  {console.log(180)}else{console.log(1)}
+  }
+}
+console.log(drum.excursie());
+console.log(autostrada.voiaj())
+
+
+var d = {
+  a : 1,
+  b : 3,
+  c : 4,
+  x : true,
+  e : function()
+  { 
+     var ser = 8
+  if (this.x === true)
+    {console.log(ser);}
+    else
+    {console.log(2+8);}
+}
+}
+console.log(d.e());
+
+
+
+
+
