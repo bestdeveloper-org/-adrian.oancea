@@ -1,0 +1,64 @@
+var arr=[1,2,3,4,5];
+var adunare = function()
+{ var suma=0;
+  for (i=0; i<arr.length; i++)
+    {
+      suma=suma+arr[i];
+}
+  return suma;
+}
+console.log(adunare(arr));
+
+
+
+var arr=[1,2,3,];
+var adunare = function()
+{ var suma=0;
+  for (i=0; i<arr.length; i++)
+    {
+      //suma=suma+arr[i];
+      if(arr[i]%2==0)
+        {
+          suma=suma+arr[i];
+        }
+}
+  return suma;
+}
+console.log(adunare(arr));
+
+var arr=[1,2,3,];
+arr.push(5);
+var adunare = function()
+{ var suma=0;
+  for (i=0; i<arr.length; i++)
+    {
+      if(arr[i]%2==1)
+        {
+          suma=suma+arr[i];
+        }
+}
+  return suma;
+}
+console.log(adunare(arr));
+
+
+var arr=[1,2,3,];
+var par = function(numar)
+{
+  if(numar%2==0)
+  {return ("true")}else{return ("false")}
+}
+var adunare = function()
+{ var suma=0;
+  for (i=0; i<arr.length; i++)
+    {
+      if(arr[i]%2==0)
+        {
+          suma=suma+arr[i];
+        }
+}
+  return suma;
+}
+console.log(par(8));
+
+
